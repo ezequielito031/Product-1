@@ -1,0 +1,63 @@
+/* FitTrack v1: basic styles */
+
+body {
+  margin: 0;
+  background: #f6f8fc;
+  color: #1a1d24;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 { margin: 12px 0 0; }
+h2 { margin: 24px 0 10px; font-size: 1.2rem; }
+p { margin: 4px 0; }
+ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+a { color: #2f6bff; text-decoration: none; }
+
+.muted { color: #626876; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.card {
+  display: block;
+  background: #fff;
+  color: inherit;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.row { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+
+.stat { background: #dce6ff; }
+.stat strong { display: block; font-size: 1.8rem; }
+
+label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; }
+input {
+  font: inherit;
+  padding: 10px;
+  border: 1px solid #ccd2dd;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 12px;
+  width: 100%;
+  font: inherit;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2f6bff;
+  color: #fff;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.success { color: #2e9d68; font-weight: 600; margin-top: 10px; }
