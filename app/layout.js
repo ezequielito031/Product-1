@@ -6,6 +6,12 @@ export const metadata = {
   description: "Track your workouts and progress",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#2F6BFF",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
