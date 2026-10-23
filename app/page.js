@@ -59,7 +59,10 @@ export default function DashboardPage() {
                 </span>
                 <div className="grow">
                   <div className="history-name">{w.exerciseName}</div>
-                  <div className="muted small">Session #{w.id}</div>
+                  <div className="muted small">
+                    Session #{w.id}
+                    {w.loggedAt && ` • ${formatDate(w.loggedAt)}`}
+                  </div>
                 </div>
                 <span className="pill pill-primary">{w.durationMinutes} min</span>
               </li>
@@ -130,3 +133,7 @@ function EmptyWorkoutState() {
   );
 }
 
+function formatDate(iso) {
+  const d = new Date(iso);
+  return isNaN(d) ? "" : d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}

@@ -1,5 +1,13 @@
 # Changelog
 
+## v3.0: API, tests and polish
+- New API: `GET /api/exercises` and `GET /api/exercises?category=hiit`
+- Unit tests with `npm test` (6 tests on the workout logic and catalog)
+- Dark mode that follows the device setting
+- Custom 404 page for unknown categories and exercises
+- Date shown on each logged workout
+- Favicon
+
 ## v2.0: Full design + saved history
 - Redesigned UI that matches the Android app: colored category cards, Material icons, difficulty badges, top bar with back button
 - Popup dialogs: "Workout Completed!" and a "Clear Workout History?" confirmation

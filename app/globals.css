@@ -29,6 +29,31 @@
   --radius: 20px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121318;
+    --surface: #1c1e24;
+    --text: #eef0f5;
+    --text-muted: #a3a9b6;
+    --border: #2e313a;
+
+    --primary-container: #1d3a85;
+    --on-primary-container: #dce6ff;
+    --secondary-container: #164a33;
+    --on-secondary-container: #c9f0dc;
+    --error-container: #6b1f1b;
+    --on-error-container: #ffdad6;
+
+    --cat-strength-bg: #1d3a85;  --cat-strength-fg: #aac2ff;
+    --cat-cardio-bg: #5c2424;    --cat-cardio-fg: #ffb4a9;
+    --cat-flexibility-bg: #164a33; --cat-flexibility-fg: #8fe0b6;
+    --cat-hiit-bg: #3f2d66;      --cat-hiit-fg: #d4c0ff;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.5);
+  }
+}
+
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
@@ -142,6 +167,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .exercise-name { font-weight: 700; font-size: 1.05rem; }
 .recommended { color: var(--blue); font-weight: 600; font-size: 0.85rem; }
+@media (prefers-color-scheme: dark) { .recommended { color: #8fb0ff; } }
 
 /* ---------- Detail ---------- */
 .hero { padding: 20px; background: var(--primary-container); color: var(--on-primary-container); box-shadow: none; }

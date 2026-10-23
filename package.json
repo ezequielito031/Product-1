@@ -1,12 +1,13 @@
 {
   "name": "fittrack-web",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "node --test tests/workouts.test.mjs"
   },
   "dependencies": {
     "next": "15.5.27",
